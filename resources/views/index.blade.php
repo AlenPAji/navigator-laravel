@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>Sunset Hotel | Hotel Premium HTML Template</title>
+    <title>Navigator Booking| Book your hotel</title>
 
     <!-- CSS Plugins -->
     <link href="assets/plugins/lightbox/dist/css/lightbox.css" rel="stylesheet">
@@ -16,6 +16,7 @@
 
     <!-- CSS Global -->
     <link rel="stylesheet" href="assets/css/theme.min.css">
+	<link rel="stylesheet" href="assets/css/newtheme.css">
 
   </head>
   <body>
@@ -95,8 +96,8 @@
 
           <!-- Logo -->
           <a class="navbar-brand" href="{{ route('index') }}">
-            <h3 class="navbar-brand__logo">Sunset Hotel</h3>
-            <p class="navbar-brand__sublogo">Grand</p>
+            <h3 class="navbar-brand__logo">Navigator</h3>
+            <p class="navbar-brand__sublogo">Booking</p>
           </a>
 
         </div> <!-- / .navbar-header -->
@@ -153,8 +154,8 @@
   	    		<div class="welcome__content">
 
   	    			<!-- logo -->
-							<h1 class="welcome_content__title">Sunset Hotel</h1>
-							<p class="welcome_content__title-primary">grand</p>
+							<h1 class="welcome_content__title">Navigator</h1>
+							<p class="welcome_content__title-primary">Booking</p>
 
 							<div class="divider">
 	    					<hr class="line1">
@@ -162,10 +163,10 @@
 	    					<hr class="line1">
 	    				</div> <!-- / .divider -->
 
-	  					<p class="welcome_content__desc">In our hotel you will find everything you need to enjoy your vacation</p>
+	  					<p class="welcome_content__desc">On our platform, you'll find the best places to stay and experience your perfect getaway.</p>
 
 	  					<!-- button -->
-	  					<a href="#section__about" class="btn btn-reservation">Explore it</a>
+	  					<a href="#section__about" class="btn btn-reservation">About Us</a>
 
 		  			</div> <!-- .welcome__content -->
     	    </div>
@@ -178,82 +179,14 @@
     </section> <!-- / .section__home -->
 
     <!-- section availability -->
-	<section class="section__availability"> 
-		<div class="container"> 
-			<div class="row"> 
-				<div class="col-sm-12"> 
-
-					<!-- Reservation form --> 
-					<form class="reservation__form"> 
-						<div class="form-group">
-							<div class="form-group__inner"> 
-								<label for="reservation__check-in">Arrival date</label>
-								<input type="text" class="form-control date" id="reservation__check-in" value="24 December 2017"> 
-							</div> <!-- / .form-group__inner --> 
-						</div> <!-- / .form-group --> 
-						<div class="form-group"> 
-							<div class="form-group__inner"> 
-								<label for="reservation__check-out">Departure date</label>
-								<input type="text" class="form-control date" id="reservation__check-out" value="12 January 2018">
-							</div> <!-- / .form-group__inner --> 
-						</div> <!-- / .form-group --> 
-						<div class="form-group"> 
-							<div class="form-group__inner"> 
-								<label for="reservation__adults">Adults</label>
-								<input type="text" id="reservation__adults">
-								<div class="dropdown reservation-dropdown">
-								  <button class="dropdown-toggle" type="button" id="adults-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								    <span>1 Adult</span>
-								    <i class="icon ion-chevron-down"></i>
-								  </button>
-								  <ul class="dropdown-menu" aria-labelledby="adults-dropdown">
-								    <li><a href="#">1 Adult</a></li>
-								    <li><a href="#">2 Adults</a></li>
-								    <li><a href="#">3 Adults</a></li>
-								  </ul>
-								</div> <!-- . -->
-							</div> <!-- / .form-group__inner --> 
-						</div> <!-- / .form-group --> 
-						<div class="form-group"> 
-							<div class="form-group__inner">
-								<label for="reservation__children">Children</label>
-								<input type="text" id="reservation__children">
-								<div class="dropdown reservation-dropdown">
-								  <button class="dropdown-toggle" type="button" id="children-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								    <span>1 Child</span>
-								    <i class="icon ion-chevron-down"></i>
-								  </button>
-								  <ul class="dropdown-menu" aria-labelledby="children-dropdown">
-								    <li><a href="#">1 Child</a></li>
-								    <li><a href="#">2 Children</a></li>
-								    <li><a href="#">3 Children</a></li>
-								  </ul>
-								</div> <!-- . -->
-							</div> <!-- / .form-group__inner --> 
-						</div> <!-- / .form-group -->  
-					</form> <!-- / .reservation__form --> 
-
-				</div> 
-			</div> <!-- / .row -->
-			<div class="row"> 
-				<div class="col-xs-12">
-
-					<!-- Reservation button --> 
-					<div class="reservation__button">
-						<button type="submit" class="btn btn-reservation">Check availability</button>
-					</div> <!-- / .reservation__button -->  
-					
-				</div> 
-			</div> <!-- / .row -->  
-		</div> <!-- / .container --> 
-	</section> <!-- .section__availability -->
+	<!-- .section__availability -->
 	   
 	<!-- section about -->
     <section class="section__about" id="section__about">
     	<div class="container">
     		<div class="row">
     			<div class="col-sm-12"> 		  	
-    				<h2 class="section__title">Welcome to <strong>Sunset Hotel</strong></h2>
+    				<h2 class="section__title">Welcome to <strong>Navigator Booking</strong></h2>
     				<div class="divider">
     					<hr class="line1">
     					<hr class="line2">
@@ -271,13 +204,18 @@
 		    			</div> <!-- / .about__pic -->
 		    	  </div>
 		    	  <div class="col-md-6">
-			    	  <div class="about__desc">
-			    	  	<p class="about_desc__subtitle">About us</p>
-			  				<h3 class="about_desc__title">Probably the best place to enjoy your life</h3>
-								<p class="about_desc__desc">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary.</p>
-								<h4 class="about_desc__quote">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</h4>
-								<a href="{{ route('about') }}" class="btn btn-default">Learn More</a>
-			  			</div> <!-- / .about__desc -->
+				  <div class="about__desc">
+    					<p class="about_desc__subtitle">About us</p>
+    					<h3 class="about_desc__title">Curated Stays for Unforgettable Moments</h3>
+    					<p class="about_desc__desc">
+        				Since you’re here to learn about your staycations, let’s focus on that. With so many options for booking stays these days, finding a truly unique one can be tough. That’s why we’ve curated a selection of private stays which give you unforgettable moments. Whether you’re traveling solo or with family, you can choose our stays which suit your needs and preferences.
+    					</p>
+    					<h4 class="about_desc__quote">
+        				"Probably the best place to enjoy your life."
+    					</h4>
+    					<a href="{{ route('about') }}" class="btn btn-default">Learn More</a>
+					</div>
+ <!-- / .about__desc -->
 		    	  </div>
 		    	</div> <!-- / .section_about__content -->
 		    </div> <!-- / .row -->
@@ -290,74 +228,59 @@
     	<div class="container">
     		<div class="row">
     		  <div class="col-sm-12"> 		  	
-    				<h2 class="section__title">Our <strong>Best rooms</strong></h2>
+    				<h2 class="section__title">Our <strong>Destinations</strong></h2>
     				<div class="divider">
     					<hr class="line1">
     					<hr class="line2">
     					<hr class="line1">
     				</div> <!-- / .divider -->
-    				<p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
+    				<p class="section__subtitle">We take pride in serving the best destinations across Kerala, offering you unforgettable stays that perfectly blend comfort and charm. Experience the essence of God’s Own Country with us</p>
     		  </div>
     		</div> <!-- / .row -->
     	</div> <!-- / .container -->
     	<div class="container">
     		<div class="best-rooms__content">
-		    	<div class="row">
-		    	  <div class="col-sm-6">
-		    	  	<figure class="best-rooms__item">
-	    	  			<img src="assets/img/single_room.jpg" class="img-responsive" alt="...">
-								<figcaption>
-									<h3>Single room</h3>
-									<div class="item__price">
-										$50 <small>/ night</small>
-									</div>
-									<p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-									<a href="{{ route('reservation') }}" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-								</figcaption>
-							</figure> <!-- / .best-rooms__item -->
-		    	  </div>
-		    	  <div class="col-sm-6">
-		    	  	<figure class="best-rooms__item">
-								<img src="assets/img/double_room.jpg" class="img-responsive" alt="...">
-								<figcaption>
-									<h3>Double room</h3>
-									<div class="item__price">
-										$135 <small>/ night</small>
-									</div>
-									<p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-									<a href="{{ route('reservation') }}" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-								</figcaption>
-							</figure> <!-- / .best-rooms__item -->
-		    	  </div>
-		    	</div> <!-- / .row -->
-		    	<div class="row">
-		    	  <div class="col-sm-6">
-		    	  	<figure class="best-rooms__item">
-								<img src="assets/img/deluxe_room.jpg" class="img-responsive" alt="...">
-								<figcaption>
-									<h3>Deluxe room</h3>
-									<div class="item__price">
-										$240 <small>/ night</small>
-									</div>
-									<p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-									<a href="{{ route('reservation') }}" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-								</figcaption>
-							</figure> <!-- / .best-rooms__item -->
-		    	  </div>
-		    	  <div class="col-sm-6">
-			    	  <figure class="best-rooms__item">
-								<img src="assets/img/royal_room.jpg" class="img-responsive" alt="...">
-								<figcaption>
-									<h3>Royal room</h3>
-									<div class="item__price">
-										$320 <small>/ night</small>
-									</div>
-									<p class="item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum modi explicabo obcaecati odit, omnis quis alias.</p>
-									<a href="{{ route('reservation') }}" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-								</figcaption>
-							</figure> <!-- / .best-rooms__item -->
-		    	  </div>
-		    	</div> <!-- / .row -->
+			<div class="row">
+  <div class="col-12 col-md-6">
+    <figure class="place-card">
+      <img src="assets/img/munnar.jpg" class="img-fluid" alt="Munnar">
+      <figcaption>
+        <h3>Munnar</h3>
+        <a href="{{ route('place', ['place' => 'munnar']) }}" class="btn-book">Book now</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="col-12 col-md-6">
+    <figure class="place-card">
+      <img src="assets/img/wayanad.jpg" class="img-fluid" alt="Wayanad">
+      <figcaption>
+        <h3>Wayanad</h3>
+        <a href="{{ route('reservation') }}" class="btn-book">Book now</a>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <figure class="place-card">
+      <img src="assets/img/kyttikanam.jpg" class="img-fluid" alt="Kuttikanam">
+      <figcaption>
+        <h3>Kuttikanam</h3>
+        <a href="{{ route('reservation') }}" class="btn-book">Book now</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="col-12 col-md-6">
+    <figure class="place-card">
+      <img src="assets/img/idukki.jpg" class="img-fluid" alt="Idukki">
+      <figcaption>
+        <h3>Idukki</h3>
+        <a href="{{ route('reservation') }}" class="btn-book">Book now</a>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+ <!-- / .row -->
 		    	<div class="row">
 			    	<div class="col-xs-12">
 			    		<div class="rooms__button">

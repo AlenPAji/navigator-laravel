@@ -1,0 +1,79 @@
+.place-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 20px; 
+  }
+  
+  .place-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    filter: brightness(60%); /* Apply light shade */
+  }
+  
+  .place-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .place-card figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Set text color to white */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .place-card h3 {
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white; /* Ensure text color is white */
+  }
+  
+  .place-card .btn-book {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem; /* Increased font size */
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .place-card:hover .btn-book {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 576px) {
+    .place-card h3 {
+      font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+  
+    .place-card .btn-book {
+      font-size: 1rem; /* Adjust button font size for small screens */
+    }
+  }
+
+  .room-carousel {
+    display: block;
+    width: 100%;
+}
+
+.room_gallery__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: matches the current style */
+}
+
+  

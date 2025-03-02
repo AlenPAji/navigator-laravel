@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>About us | Sunset Hotel</title>
+    <title>About us | Navigator Booking</title>
 
     <!-- CSS Plugins -->
 		<link href="assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
@@ -95,7 +95,7 @@
 
           <!-- Logo -->
           <a class="navbar-brand" href="{{ route('index') }}">
-            <h3 class="navbar-brand__logo">Sunset Hotel</h3>
+            <h3 class="navbar-brand__logo">Navigator Booking</h3>
             <p class="navbar-brand__sublogo">Grand</p>
           </a>
 
@@ -161,7 +161,7 @@
 							  <li class="active">About us</li>
 							</ol>
 
-	  					<p class="welcome_content__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	  					<p class="welcome_content__desc">Since you’re here to learn about your staycations, let’s focus on that. With so many options for booking stays these days, finding a truly unique one can be tough. That’s why we’ve curated a selection of private stays which give you an unforgettable moments. Whether you’re traveling solo or with family , you can choose our stays which suits your needs and preferences.</p>
 
 		  			</div> <!-- .welcome__content -->
     	    </div>
@@ -175,7 +175,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-sm-12"> 		  	
-    				<h2 class="section__title">Welcome to <strong>Sunset Hotel</strong></h2>
+    				<h2 class="section__title">Welcome to <strong>Navigator Booking</strong></h2>
     				<div class="divider">
     					<hr class="line1">
     					<hr class="line2">
