@@ -13,20 +13,20 @@ Route::get('/place/{place}', function ($place) {
     // Define data for each place
     if ($place === 'munnar') {
         $properties = collect([
-            ['name' => 'Cloud bed view cottage', 'img' => 'md1.jpg', 'price' => 'unknown', 'rating' => '4.5'],
+            ['name' => 'Cloud bed view cottage', 'img' => 'cbv1.jpg', 'price' => 'unknown', 'rating' => '4.5'],
             ['name' => 'forest bungalow kanthallor', 'img' => 'fbk2.jpg', 'price' => '1650', 'rating' => '4.5'],
-            ['name' => 'water fall view resort', 'img' => 'wfvr1.jpg', 'price' => '1650', 'rating' => '4.5'],
-            ['name' => 'Private pool villa', 'img' => 'ex1.jpg', 'price' => '$120', 'rating' => '4.5'],
-            ['name' => 'Tea Valley Private pool and cottages', 'img' => 'ex2.jpg', 'price' => '$150', 'rating' => '4.8'],
-            ['name' => '2 bedroom pool villa, Rajakkad', 'img' => 'af2.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => 'Tent stay Kanthalloor', 'img' => 'af1.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => '⁠Open view cottage in Kanthalloor, Rajakkad', 'img' => 'af2.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => '⁠Bungalow stay in Kanthalloor', 'img' => 'ex3.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => '⁠Mamalakandam forest stay', 'img' => 'md2.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => 'Budget pool resort munnar', 'img' => 'md3.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'water fall view resort', 'img' => 'wvt3.jpg', 'price' => '1650', 'rating' => '4.5'],
+            ['name' => 'Tea Valley Private pool and cottages', 'img' => 'tvvpp3.jpg', 'price' => '$150', 'rating' => '4.8'],
+            ['name' => 'dome stay kanthalloor', 'img' => 'kds1.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'private villa in chathurangappara', 'img' => 'ch3bpv1.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'private villa in kanthalloor', 'img' => 'k3bpv1.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'Budget pool resort munnar', 'img' => 'bprm1.jpg', 'price' => '$100', 'rating' => '4.2'],
             ['name' => 'Budget plantation view resort', 'img' => 'af4.jpg', 'price' => '$100', 'rating' => '4.2'],
             ['name' => 'Marayoor forest stay', 'img' => 'af2.jpg', 'price' => '$100', 'rating' => '4.2'],
             ['name' => 'Kanthalloor mud house', 'img' => 'af1.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'Private pool villa', 'img' => 'ex1.jpg', 'price' => '$120', 'rating' => '4.5'],
+            ['name' => '2 bedroom pool villa, Rajakkad', 'img' => 'af2.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => '⁠Mamalakandam forest stay', 'img' => 'md2.jpg', 'price' => '$100', 'rating' => '4.2'],
         ]);
         $currentPage = LengthAwarePaginator::resolveCurrentPage();
         $perPage = 5;
@@ -69,7 +69,7 @@ Route::get('/place/{place}/{hotel}', function ($place, $hotel) {
             'cloud-bed-view-cottage' => [
                 'name' => 'Cloud Bed View Resort',
                 'main_images' => [
-                    'cbv1.jpeg',  
+                    'cbv2.jpg',  
                     'cbv2.jpeg',  
                     'cbv3.jpeg',  
                     'cbv4.jpeg'   
@@ -120,6 +120,8 @@ Route::get('/place/{place}/{hotel}', function ($place, $hotel) {
             'water-fall-view-resort' => [
                 'name' => 'water fall view resort',
                 'main_images' => [
+                    'wvt1.jpg',
+                    'wvt2.jpg',
                     'wfvth1.jpg',  
                     'wfvr1.jpg',  
                     'wfvth3.jpg',  
@@ -147,7 +149,127 @@ Route::get('/place/{place}/{hotel}', function ($place, $hotel) {
                         ]
                     ],
                     ]
-            ]
+                ],
+                'budget-pool-resort-munnar' => [
+                'name' => 'Budget pool resort Munnar',
+                'main_images' => [
+                    'bprm1.jpg',  
+                    'bprm2.jpg',  
+                    'bprm3.jpg',  
+                    'bprm4.jpg',
+                    'bprm5.jpg',
+                    'bprm6.jpg'  
+                ],
+                'categories'=>[
+                    'cottage' => [
+                        'name' => 'Cottage',
+                        'price' => '100',
+                        'images' => [
+                            'bprmc1.jpg', 
+                            'bprmc2.jpg', 
+                            'bprmc3.jpg', 
+                            'bprmc4.jpg'  
+                        ]
+                    ],
+                    'deluxe' => [
+                        'name' => 'Deluxe',
+                        'price' => '150',
+                        'images' => [
+                            'bprmd1.jpg', 
+                            'bprmd2.jpg',
+                            'bprmd3.jpg',
+                            'bprmd4.jpg'
+                        ]
+                    ],
+                    'super-deluxe' => [
+                        'name' => 'Super Deluxe',
+                        'price' => '150',
+                        'images' => [
+                            'bprmsd1.jpg', 
+                            'bprmsd2.jpg',
+                            'bprmsd3.jpg',
+                            'bprmsd4.jpg'
+                        ]
+                    ],
+                    ]
+                ],
+                'tea-valley-private-pool-and-cottages' => [
+                'name' => 'Tea Valley Private pool and cottages',
+                'main_images' => [
+                    'tvv1.jpg',  
+                    'tvv2.jpg',
+                    'tvv3.jpg',
+                    'tvv4.jpg',
+                    'tvv5.jpg',
+                    'tvv6.jpg'  
+                ],
+                'categories'=>[
+                    'premium-cottage' => [
+                        'name' => 'Premium Cottage ',
+                        'price' => '$100',
+                        'images' => [
+                            'tvvpc1.jpg',
+                            'tvvpc2.jpg',
+                            'tvvpc3.jpg',
+                            'tvvpc4.jpg'  
+                        ]
+                    ],
+                    'cottage' => [
+                        'name' => 'Cottage',
+                        'price' => '$150',
+                        'images' => [
+                            'tvvc1.jpg',
+                            'tvvc2.jpg',
+                            'tvvc3.jpg',
+                            'tvvc4.jpg',
+                            'tvvc5.jpg'  
+                        ]
+                    ],
+                    'private-pool-villa' => [
+                        'name' => 'Private Pool Villa ',
+                        'price' => '$150',
+                        'images' => [
+                            'tvvpp1.jpg',
+                            'tvvpp2.jpg',
+                            'tvvpp3.jpg'  
+                        ]
+                    ]
+                    ]
+                        ],
+                'dome-stay-kanthalloor' => [
+                'name' => 'Kanthalloor Dome Stay',
+                'main_images' => [
+                    'kds1.jpg',  
+                    'kds2.jpg',  
+                    'kds3.jpg',  
+                    'kds4.jpg',
+                    'kds5.jpg'   
+                ],
+                'categories'=>[]
+            ],
+            'private-villa-in-chathurangappara' => [
+                'name' => 'Private Villa in Chathurangappara(3 Bedroom)',
+                'main_images' => [
+                    'ch3bpv1.jpg',  
+                    'ch3bpv2.jpg',
+                    'ch3bpv3.jpg',
+                    'ch3bpv4.jpg',
+                    'ch3bpv5.jpg',
+                    'ch3bpv6.jpg'    
+                ],
+                'categories'=>[]
+            ],
+            'private-villa-in-kanthalloor' => [
+                'name' => 'Private Villa in Kanthalloor(3 Bedroom)',
+                'main_images' => [
+                    'k3bpv1.jpg',  
+                    'k3bpv2.jpg',
+                    'k3bpv3.jpg',
+                    'k3bpv4.jpg',
+                    'k3bpv5.jpg'    
+                ],
+                'categories'=>[]
+                ]
         ]
     ];
 
