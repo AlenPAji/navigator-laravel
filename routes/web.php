@@ -21,12 +21,12 @@ Route::get('/place/{place}', function ($place) {
             ['name' => 'private villa in chathurangappara', 'img' => 'ch3bpv1.jpg', 'price' => '$100', 'rating' => '4.2'],
             ['name' => 'private villa in kanthalloor', 'img' => 'k3bpv1.jpg', 'price' => '$100', 'rating' => '4.2'],
             ['name' => 'Budget pool resort munnar', 'img' => 'bprm1.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => 'Budget plantation view resort', 'img' => 'af4.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => 'Marayoor forest stay', 'img' => 'af2.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => 'Kanthalloor mud house', 'img' => 'af1.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => 'Private pool villa', 'img' => 'ex1.jpg', 'price' => '$120', 'rating' => '4.5'],
-            ['name' => '2 bedroom pool villa, Rajakkad', 'img' => 'af2.jpg', 'price' => '$100', 'rating' => '4.2'],
-            ['name' => '⁠Mamalakandam forest stay', 'img' => 'md2.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'Private Pool Villa Munnar', 'img' => 'ppvm1.png', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'Premium Cottage and Pool Villa Munnar', 'img' => 'pcpvm.jpg', 'price' => '$100', 'rating' => '4.2'],
+            ['name' => 'Pool Villa Chathurangappara', 'img' => 'pvc.jpg', 'price' => '$100', 'rating' => '4.2'],
+            // ['name' => 'Private pool villa', 'img' => 'ex1.jpg', 'price' => '$120', 'rating' => '4.5'],
+            // ['name' => '2 bedroom pool villa, Rajakkad', 'img' => 'af2.jpg', 'price' => '$100', 'rating' => '4.2'],
+            // ['name' => '⁠Mamalakandam forest stay', 'img' => 'md2.jpg', 'price' => '$100', 'rating' => '4.2'],
         ]);
         $currentPage = LengthAwarePaginator::resolveCurrentPage();
         $perPage = 5;
@@ -269,7 +269,67 @@ Route::get('/place/{place}/{hotel}', function ($place, $hotel) {
                     'k3bpv5.jpg'    
                 ],
                 'categories'=>[]
-                ]
+            ],
+            'private-pool-villa-munnar' => [
+                'name' => 'Private Pool Villa Munnar',
+                'main_images' => [
+                    'ppvm2.png',  
+                    'ppvm3.png',
+                    'ppvm4.png',
+                    'ppvm5.png',
+                    'ppvm6.png'    
+                ],
+                'categories'=>[]
+            ],
+            'premium-cottage-and-pool-villa-munnar' => [
+                'name' => 'Tea Valley Private pool and cottages',
+                'main_images' => [
+                    'pcpvm1.jpg',  
+                    'pcpvm2.jpg',
+                    'pcpvm3.jpg',
+                    'pcpvm4.jpg',
+                    'pcpvm5.jpg' 
+                ],
+                'categories'=>[
+                    'premium-cottage' => [
+                        'name' => 'Gardenia Cottage ',
+                        'price' => '$100',
+                        'images' => [
+                            'pcpvmgc3.jpg',
+                            'pcpvmgc1.jpg',
+                            'pcpvmgc4.jpg'  
+                        ]
+                    ],
+                    'villa' => [
+                        'name' => 'Jaccuzi Villa',
+                        'price' => '$150',
+                        'images' => [
+                            'pcpvmjv1.jpg',
+                            'pcpvmjv2.jpg'  
+                        ]
+                    ],
+                    'private-pool-villa' => [
+                        'name' => 'Private Pool Villa ',
+                        'price' => '$150',
+                        'images' => [
+                            'pcpvmppv1.jpg',
+                            'pcpvmppv2.jpg',
+                            'pcpvmppv3.jpg'  
+                        ]
+                    ]
+                    ]
+                        ],
+                        'pool-villa-chathurangappara' => [
+                'name' => 'Private Pool Villa Munnar',
+                'main_images' => [
+                    'pvc1.jpg',  
+                    'pvc2.jpg',
+                    'pvc3.jpg',
+                    'pvc4.jpg',
+                    'pvc5.jpg'    
+                ],
+                'categories'=>[]
+            ]
         ]
     ];
 
